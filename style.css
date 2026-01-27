@@ -503,19 +503,19 @@ nav a:hover {
 
 .vision-box, .mission-box {
     flex: 1;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #0f2744 0%, #1a5490 100%);
     padding: 50px;
-    border-left: 6px solid #2a7dd7;
+    border-left: 6px solid #ff9800;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(42, 125, 215, 0.15);
+    box-shadow: 0 10px 30px rgba(42, 125, 215, 0.3);
     transition: all 0.4s ease;
     animation: fadeInLeft 0.8s ease-out;
 }
 
 .vision-box:hover, .mission-box:hover {
     transform: translateY(-15px);
-    box-shadow: 0 20px 50px rgba(42, 125, 215, 0.25);
-    border-left-color: #ff9800;
+    box-shadow: 0 20px 50px rgba(255, 152, 0, 0.4);
+    border-left-color: #ffffff;
 }
 
 @keyframes fadeInLeft {
@@ -531,14 +531,15 @@ nav a:hover {
 
 .vision-box h3, .mission-box h3 {
     margin-top: 0;
-    color: #0f2744;
+    color: #ffffff;
     font-size: 1.8em;
     margin-bottom: 20px;
     font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .vision-box p, .mission-box p {
-    color: #2c3e50;
+    color: #ffffff;
     line-height: 1.8;
     font-size: 1.05em;
 }
@@ -571,25 +572,26 @@ nav a:hover {
 
 /* Management Section */
 .management {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #0f2744 0%, #1a5490 100%);
     padding: 50px;
     border-radius: 15px;
     margin-top: 40px;
-    box-shadow: 0 10px 30px rgba(42, 125, 215, 0.15);
+    box-shadow: 0 10px 30px rgba(42, 125, 215, 0.3);
     animation: fadeInUp 0.8s ease-out;
-    border-left: 6px solid #2a7dd7;
+    border-left: 6px solid #ff9800;
 }
 
 .management h4 {
-    color: #0f2744;
+    color: #ffffff;
     font-weight: 700;
     margin-top: 25px;
     margin-bottom: 15px;
     font-size: 1.4em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .management p {
-    color: #2c3e50;
+    color: #ffffff;
     line-height: 1.8;
     font-size: 1.05em;
     margin-bottom: 15px;
@@ -604,12 +606,12 @@ nav a:hover {
     margin-bottom: 12px;
     font-size: 1.05em;
     transition: transform 0.3s ease;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 .management li:hover {
     transform: translateX(10px);
-    color: #2a7dd7;
+    color: #ffb74d;
 }
 
 /* Services Grid */
@@ -792,25 +794,26 @@ nav a:hover {
 
 /* Safety Section */
 .safety-section {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #0f2744 0%, #1a5490 100%);
     padding: 60px;
     border-radius: 15px;
     margin-top: 60px;
-    box-shadow: 0 10px 30px rgba(42, 125, 215, 0.15);
+    box-shadow: 0 15px 40px rgba(42, 125, 215, 0.3);
     animation: fadeInUp 0.8s ease-out;
-    border-left: 6px solid #2a7dd7;
+    border-left: 6px solid #ff9800;
 }
 
 .safety-section h3 {
     margin-top: 0;
-    color: #0f2744;
+    color: #ffffff;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .safety-section p {
-    color: #2c3e50;
+    color: #ffffff;
     font-size: 1.1em;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -837,22 +840,22 @@ nav a:hover {
 .contact-item {
     margin-bottom: 35px;
     padding: 30px;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #1a5490 0%, #0f2744 100%);
     border-radius: 12px;
-    border-left: 5px solid #2a7dd7;
+    border-left: 5px solid #ff9800;
     transition: all 0.4s ease;
     animation: slideInUp 0.6s ease-out;
-    box-shadow: 0 5px 20px rgba(42, 125, 215, 0.1);
+    box-shadow: 0 10px 30px rgba(42, 125, 215, 0.3);
 }
 
 .contact-item:hover {
     transform: translateX(10px) translateY(-5px);
-    box-shadow: 0 10px 30px rgba(42, 125, 215, 0.2);
-    border-left-color: #ff9800;
+    box-shadow: 0 15px 40px rgba(255, 152, 0, 0.4);
+    border-left-color: #ffffff;
 }
 
 .contact-item h4 {
-    color: #0f2744;
+    color: #ffffff;
     margin-bottom: 15px;
     font-size: 1.4em;
     font-weight: 700;
@@ -860,20 +863,21 @@ nav a:hover {
 
 .contact-item p {
     margin-bottom: 8px;
-    color: #2c3e50;
+    color: #ffffff;
     line-height: 1.6;
 }
 
 .contact-item a {
-    color: #2a7dd7;
+    color: #ffb74d;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #ff9800;
+    color: #ffffff;
     text-decoration: underline;
+    text-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
 }
 
 .contact-item ul {
@@ -893,12 +897,12 @@ nav a:hover {
 
 /* Contact Form */
 .contact-form {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #1a5490 0%, #0f2744 100%);
     padding: 50px;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(42, 125, 215, 0.15);
+    box-shadow: 0 15px 40px rgba(42, 125, 215, 0.3);
     animation: fadeInRight 0.8s ease-out;
-    border-left: 6px solid #2a7dd7;
+    border-left: 6px solid #ff9800;
 }
 
 @keyframes fadeInRight {
@@ -919,7 +923,7 @@ nav a:hover {
 .form-group label {
     display: block;
     margin-bottom: 10px;
-    color: #0f2744;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.05em;
     text-transform: uppercase;

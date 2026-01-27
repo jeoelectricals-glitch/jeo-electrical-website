@@ -900,11 +900,12 @@ nav a:hover {
 
 .contact-info h3,
 .contact-form-section h3 {
-    color: #0f2744;
+    color: #ffffff;
     margin-bottom: 30px;
-    font-size: 2em;
-    font-weight: 800;
-    letter-spacing: 1px;
+    font-size: 2.2em;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .contact-item {
@@ -987,55 +988,70 @@ nav a:hover {
 }
 
 .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 10px;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.05em;
+    margin-bottom: 15px;
+    color: #ffb74d;
+    font-weight: 900;
+    font-size: 1.25em;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 15px;
-    border: 2px solid #2a7dd7;
-    border-radius: 8px;
-    font-size: 1em;
+    padding: 20px;
+    border: 3px solid #ff9800;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.3s ease;
-    background: white;
+    background: #ffffff;
+    color: #0f2744;
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.2);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999999;
+    font-weight: 500;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #ff9800;
-    box-shadow: 0 0 20px rgba(255, 152, 0, 0.3);
-    transform: scale(1.02);
-    background: #fffaf0;
+    border-color: #ffb74d;
+    box-shadow: 0 0 30px rgba(255, 152, 0, 0.6), inset 0 0 5px rgba(255, 152, 0, 0.2);
+    transform: scale(1.03);
+    background: #fffdf5;
+    color: #0f2744;
 }
 
 button[type="submit"] {
     background: linear-gradient(135deg, #ff9800 0%, #ff6f00 100%);
-    color: white;
-    padding: 18px 50px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.2em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    box-shadow: 0 8px 25px rgba(255, 152, 0, 0.4);
-    position: relative;
-    overflow: hidden;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 22px 60px;
+    border: 3px solid #ffffff;
+    border-radius: 35px;
+    font-size: 1.35em;\n    font-weight: 900;\n    cursor: pointer;\n    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);\n    box-shadow: 0 12px 35px rgba(255, 152, 0, 0.6), 0 0 20px rgba(255, 152, 0, 0.3);\n    position: relative;\n    overflow: hidden;\n    text-transform: uppercase;\n    letter-spacing: 1.5px;\n    animation: buttonGlow 2s ease-in-out infinite;\n}
+
+button[type="submit"]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
 }
 
 button[type="submit"]::before {
@@ -1057,44 +1073,39 @@ button[type="submit"]:hover::before {
 }
 
 button[type="submit"]:hover {
-    background: linear-gradient(135deg, #ff6f00 0%, #ff9800 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(255, 152, 0, 0.6);
+    background: linear-gradient(135deg, #ffb74d 0%, #ff9800 100%);
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0 18px 50px rgba(255, 152, 0, 0.8), 0 0 30px rgba(255, 152, 0, 0.5);
+    border-color: #ffffff;
 }
 
 button[type="submit"]:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
-}
-    transition: width 0.6s, height 0.6s;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 152, 0, 0.6);
 }
 
-button[type="submit"]:hover::before {
-    width: 400px;
-    height: 400px;
-}
-
-button[type="submit"]:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(10, 31, 68, 0.4);
-}
-
-button[type="submit"]:active {
-    transform: translateY(-1px);
+@keyframes buttonGlow {
+    0%, 100% {
+        box-shadow: 0 12px 35px rgba(255, 152, 0, 0.6), 0 0 20px rgba(255, 152, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 12px 35px rgba(255, 152, 0, 0.8), 0 0 30px rgba(255, 152, 0, 0.5);
+    }
 }
 
 .form-note {
-    margin-top: 25px;
-    padding: 20px;
-    font-size: 1.05em;
+    margin-top: 30px;
+    padding: 25px;
+    font-size: 1.15em;
     color: #ffffff;
     font-style: italic;
-    background: linear-gradient(135deg, rgba(42, 125, 215, 0.2) 0%, rgba(255, 152, 0, 0.15) 100%);
-    border-left: 4px solid #ff9800;
-    border-radius: 8px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.2);
+    background: linear-gradient(135deg, rgba(42, 125, 215, 0.25) 0%, rgba(255, 152, 0, 0.2) 100%);
+    border-left: 5px solid #ff9800;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.1);
+    line-height: 1.8;
 }
 
 /* Footer */

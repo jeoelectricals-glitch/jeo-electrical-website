@@ -996,3 +996,223 @@ html {
 }
 
 /* Page
+/* Small mobile phones (below 480px) - ENHANCED */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    header {
+        padding: 15px 0;
+    }
+    
+    header h1 {
+        font-size: 1em;
+    }
+    
+    header p {
+        font-size: 0.85em;
+    }
+    
+    .logo-container {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .logo-badge {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+    
+    .logo-badge::before {
+        font-size: 0.5em;
+    }
+    
+    .logo-text {
+        text-align: center;
+    }
+    
+    .logo-text .company-name {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+    
+    .logo-text .company-tagline {
+        font-size: 0.35em;
+    }
+    
+    nav .container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero {
+        padding: 30px 0;
+    }
+    
+    .hero h2 {
+        font-size: 1.3em;
+    }
+    
+    .hero p {
+        font-size: 0.9em;
+    }
+    
+    .intro {
+        padding: 30px 0;
+    }
+    
+    .intro h2 {
+        font-size: 1.3em;
+    }
+    
+    .intro p {
+        font-size: 0.95em;
+    }
+    
+    .page-content {
+        padding: 30px 0;
+    }
+    
+    .page-content h2 {
+        font-size: 1.3em;
+    }
+    
+    .page-content h3 {
+        font-size: 1.2em;
+    }
+    
+    .page-content p {
+        font-size: 0.95em;
+    }
+    
+    .services-hero-image {
+        height: 200px;
+    }
+    
+    .services-hero-text {
+        padding: 15px;
+    }
+    
+    .services-hero-text h3 {
+        font-size: 1.1em;
+    }
+    
+    .services-hero-text p {
+        font-size: 0.85em;
+    }
+    
+    .service-icon {
+        font-size: 2.5em;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.1em;
+    }
+    
+    .service-card p {
+        font-size: 0.9em;
+    }
+    
+    .vision-box, .mission-box {
+        padding: 20px;
+    }
+    
+    .vision-box h3, .mission-box h3 {
+        font-size: 1.2em;
+    }
+    
+    .why-choose {
+        padding: 20px;
+    }
+    
+    .why-choose h3 {
+        font-size: 1.3em;
+    }
+    
+    .why-choose li {
+        font-size: 0.95em;
+    }
+    
+    .safety-section {
+        padding: 20px;
+    }
+    
+    .contact-item {
+        padding: 15px;
+    }
+    
+    .contact-item h4 {
+        font-size: 1.1em;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .form-group label {
+        font-size: 0.95em;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.95em;
+    }
+    
+    button[type="submit"] {
+        padding: 12px 25px;
+        font-size: 1em;
+        width: 100%;
+    }
+    
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .whatsapp-icon {
+        font-size: 2em;
+    }
+    
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 80px;
+        right: 15px;
+        font-size: 1.3em;
+    }
+    
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .gallery-item img {
+        height: 180px;
+    }
+    
+    .gallery-item p {
+        padding: 15px;
+        font-size: 1em;
+    }
+    
+    footer p {
+        font-size: 0.9em;
+    }
+}

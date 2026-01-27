@@ -1292,17 +1292,21 @@ html {
         font-size: 0.45em;
     }
     
+    nav {
+        padding: 8px 0;
+    }
+    
     nav .container {
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 5px;
+        gap: 2px;
         justify-content: center;
         overflow-x: auto;
     }
     
     nav a {
-        padding: 10px 12px;
-        font-size: 0.85em;
+        padding: 8px 10px;
+        font-size: 0.8em;
         white-space: nowrap;
         flex-shrink: 0;
     }
@@ -1444,20 +1448,20 @@ html {
     }
     
     nav {
-        padding: 10px 0;
+        padding: 6px 0;
     }
     
     nav .container {
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 4px;
+        gap: 2px;
         justify-content: center;
         overflow-x: auto;
     }
     
     nav a {
-        padding: 8px 10px;
-        font-size: 0.8em;
+        padding: 6px 8px;
+        font-size: 0.75em;
         white-space: nowrap;
         flex-shrink: 0;
     }

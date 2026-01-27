@@ -323,9 +323,9 @@ nav a:hover {
     z-index: 2;
     animation: zoomInDown 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
     text-shadow: 
-        0 0 30px rgba(255, 152, 0, 0.6),
-        0 0 60px rgba(42, 125, 215, 0.4),
-        5px 5px 15px rgba(0, 0, 0, 0.6);
+        0 0 30px rgba(255, 152, 0, 0.8),
+        0 0 60px rgba(255, 152, 0, 0.6),
+        5px 5px 20px rgba(0, 0, 0, 0.8);
     font-weight: 900;
     letter-spacing: -1px;
     line-height: 1.1;
@@ -357,24 +357,23 @@ nav a:hover {
 }
 
 .logo-display {
-    margin-bottom: 40px;
-    animation: zoomInDown 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    z-index: 0;
+    opacity: 0.15;
 }
 
 .logo-display img {
-    max-width: 200px;
+    width: 100%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 183, 77, 0.4);
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
     transition: all 0.4s ease;
-    border: 4px solid #ffb74d;
-}
-
-.logo-display img:hover {
-    transform: scale(1.1) rotate(2deg);
-    box-shadow: 0 15px 60px rgba(255, 183, 77, 0.6), 0 0 40px rgba(255, 183, 77, 0.5);
 }
 
 .hero p {
@@ -383,15 +382,16 @@ nav a:hover {
     position: relative;
     z-index: 2;
     animation: fadeInUp 1.2s ease-out 0.4s backwards;
-    color: #ffb74d;
+    color: #ffffff;
     font-weight: 700;
     letter-spacing: 2px;
     margin-top: 50px;
-    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 183, 77, 0.4);
+    text-shadow: 0 0 25px rgba(255, 152, 0, 0.8), 3px 3px 15px rgba(0, 0, 0, 0.7);
     padding: 20px;
-    background: rgba(15, 39, 68, 0.5);
+    background: rgba(15, 39, 68, 0.7);
     border-radius: 10px;
     backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 183, 77, 0.4);
 }
 
 @keyframes zoomInDown {

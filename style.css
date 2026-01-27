@@ -888,6 +888,49 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+/* Areas of Operation Section */
+.areas-section {
+    background: linear-gradient(135deg, #0f2744 0%, #1a5490 100%);
+    padding: 60px;
+    border-radius: 15px;
+    margin-top: 60px;
+    box-shadow: 0 15px 40px rgba(42, 125, 215, 0.3);
+    animation: fadeInUp 0.8s ease-out;
+    border-left: 6px solid #ff9800;
+}
+
+.areas-section h3 {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.areas-list {
+    margin: 0;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.areas-list li {
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 2;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.areas-list li::before {
+    content: '⚡';
+    position: absolute;
+    left: 0;
+    color: #ffb74d;
+    font-size: 1.2em;
+}
+
 /* Contact Page Styles */
 .contact-grid {
     display: grid;

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEO Electrical Construction Nigeria Limited</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-badge">JEO</div>
+                <div class="logo-text">
+                    <div class="company-name">JEO ELECTRICAL</div>
+                    <div class="company-tagline">CONSTRUCTION NIGERIA LIMITED</div>
+                </div>
+            </div>
+            <p>High Tension & Low-Tension Electrical Engineering Services</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to JEO Electrical Construction</h2>
+            <p>Your Trusted Partner in Electrical Engineering Solutions</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <h2>Professional Electrical Engineering Services</h2>
+            <p>JEO Electrical Construction Nigeria Limited is a professionally managed electrical engineering company specializing in high tension and low-tension electrical works across Nigeria.</p>
+            <p>We are actively involved in the supply, installation, maintenance, repair, and commissioning of electrical power systems, including transformers, armored cables, and related electrical infrastructure.</p>
+            
+            <div class="image-gallery">
+                <div class="gallery-item animate-on-scroll delay-1">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=500" alt="Electrical Transformer">
+                    <p>Transformer Installation</p>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-2">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500" alt="High Tension Cables">
+                    <p>High Tension Systems</p>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-3">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500" alt="Electrical Equipment">
+                    <p>Professional Equipment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 JEO Electrical Construction Nigeria Limited. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2348033458045" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+<!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        ⬆️
+    </button>
+
+</body>
+</body>
+</body><script>
+        // Back to Top Button Functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        // Show button when user scrolls down 300px
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Scroll to top when button is clicked
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+<script>
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</body>
+</html>

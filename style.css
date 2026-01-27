@@ -1294,13 +1294,17 @@ html {
     
     nav .container {
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 8px;
+        flex-wrap: nowrap;
+        gap: 5px;
+        justify-content: center;
+        overflow-x: auto;
     }
     
     nav a {
-        padding: 10px 15px;
-        font-size: 0.9em;
+        padding: 10px 12px;
+        font-size: 0.85em;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
     
     .hero {
@@ -1445,15 +1449,17 @@ html {
     
     nav .container {
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 5px;
+        flex-wrap: nowrap;
+        gap: 4px;
         justify-content: center;
+        overflow-x: auto;
     }
     
     nav a {
-        padding: 8px 12px;
-        font-size: 0.85em;
-        flex: 0 1 auto;
+        padding: 8px 10px;
+        font-size: 0.8em;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
     
     .hero {

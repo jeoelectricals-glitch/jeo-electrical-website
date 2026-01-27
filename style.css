@@ -909,61 +909,71 @@ nav a:hover {
 }
 
 .contact-item {
-    margin-bottom: 35px;
-    padding: 30px;
+    margin-bottom: 40px;
+    padding: 35px;
     background: linear-gradient(135deg, #1a5490 0%, #0f2744 100%);
-    border-radius: 12px;
-    border-left: 5px solid #ff9800;
+    border-radius: 15px;
+    border-left: 6px solid #ffb74d;
     transition: all 0.4s ease;
     animation: slideInUp 0.6s ease-out;
-    box-shadow: 0 10px 30px rgba(42, 125, 215, 0.3);
+    box-shadow: 0 12px 40px rgba(42, 125, 215, 0.4);
 }
 
 .contact-item:hover {
     transform: translateX(10px) translateY(-5px);
-    box-shadow: 0 15px 40px rgba(255, 152, 0, 0.4);
+    box-shadow: 0 18px 50px rgba(255, 177, 77, 0.5);
     border-left-color: #ffffff;
+    background: linear-gradient(135deg, #2a7dd7 0%, #1a5490 100%);
 }
 
 .contact-item h4 {
-    color: #ffffff;
-    margin-bottom: 15px;
-    font-size: 1.4em;
-    font-weight: 700;
+    color: #ffb74d;
+    margin-bottom: 18px;
+    font-size: 1.6em;
+    font-weight: 800;
+    letter-spacing: 0.5px;
 }
 
 .contact-item p {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: #ffffff;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.05em;
+    font-weight: 500;
 }
 
 .contact-item a {
     color: #ffb74d;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.1em;
     transition: all 0.3s ease;
 }
 
 .contact-item a:hover {
     color: #ffffff;
     text-decoration: underline;
-    text-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+    text-shadow: 0 0 15px rgba(255, 183, 77, 0.7);
 }
 
 .contact-item ul {
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
 .contact-item li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     transition: all 0.3s ease;
+    color: #ffffff;
+    font-size: 1.05em;
+    font-weight: 500;
+    line-height: 1.8;
 }
 
 .contact-item li:hover {
-    transform: translateX(5px);
-    color: #0a1f44;
+    transform: translateX(8px);
+    color: #ffb74d;
+    text-shadow: 0 0 10px rgba(255, 183, 77, 0.3);
 }
 
 /* Contact Form */
@@ -1005,41 +1015,37 @@ nav a:hover {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 20px;
-    border: 3px solid #ff9800;
-    border-radius: 10px;
-    font-size: 1.1em;
-    font-weight: 600;
+    padding: 25px;
+    border: 4px solid #ffb74d;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.3s ease;
     background: #ffffff;
     color: #0f2744;
-    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(255, 183, 77, 0.3);
+    line-height: 1.5;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #999999;
-    font-weight: 500;
+    color: #666666;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #ffb74d;
-    box-shadow: 0 0 30px rgba(255, 152, 0, 0.6), inset 0 0 5px rgba(255, 152, 0, 0.2);
-    transform: scale(1.03);
-    background: #fffdf5;
+    border-color: #ffffff;
+    box-shadow: 0 0 40px rgba(255, 183, 77, 0.8), inset 0 0 8px rgba(255, 183, 77, 0.3);
+    transform: scale(1.04);
+    background: #fffef9;
     color: #0f2744;
 }
 
-button[type="submit"] {
-    background: linear-gradient(135deg, #ff9800 0%, #ff6f00 100%);
-    color: #ffffff;
-    padding: 22px 60px;
-    border: 3px solid #ffffff;
-    border-radius: 35px;
-    font-size: 1.35em;\n    font-weight: 900;\n    cursor: pointer;\n    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);\n    box-shadow: 0 12px 35px rgba(255, 152, 0, 0.6), 0 0 20px rgba(255, 152, 0, 0.3);\n    position: relative;\n    overflow: hidden;\n    text-transform: uppercase;\n    letter-spacing: 1.5px;\n    animation: buttonGlow 2s ease-in-out infinite;\n}
+button[type="submit"] { background: linear-gradient(135deg, #ffb74d 0%, #ff9800 100%); color: #0f2744; padding: 28px 70px; border: 4px solid #ffffff; border-radius: 40px; font-size: 1.45em; font-weight: 900; cursor: pointer; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 15px 45px rgba(255, 183, 77, 0.7), 0 0 25px rgba(255, 183, 77, 0.4); position: relative; overflow: hidden; text-transform: uppercase; letter-spacing: 2px; animation: buttonGlow 2s ease-in-out infinite; }
 
 button[type="submit"]::before {
     content: '';
@@ -1073,15 +1079,17 @@ button[type="submit"]:hover::before {
 }
 
 button[type="submit"]:hover {
-    background: linear-gradient(135deg, #ffb74d 0%, #ff9800 100%);
-    transform: translateY(-5px) scale(1.08);
-    box-shadow: 0 18px 50px rgba(255, 152, 0, 0.8), 0 0 30px rgba(255, 152, 0, 0.5);
+    background: linear-gradient(135deg, #ffffff 0%, #ffb74d 100%);
+    color: #0f2744;
+    transform: translateY(-6px) scale(1.1);
+    box-shadow: 0 20px 60px rgba(255, 183, 77, 0.9), 0 0 40px rgba(255, 183, 77, 0.6);
     border-color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 button[type="submit"]:active {
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 10px 25px rgba(255, 152, 0, 0.6);
+    transform: translateY(-3px) scale(1.07);
+    box-shadow: 0 12px 30px rgba(255, 183, 77, 0.7);
 }
 
 @keyframes buttonGlow {
@@ -1094,18 +1102,19 @@ button[type="submit"]:active {
 }
 
 .form-note {
-    margin-top: 30px;
-    padding: 25px;
-    font-size: 1.15em;
-    color: #ffffff;
+    margin-top: 35px;
+    padding: 30px;
+    font-size: 1.25em;
+    color: #ffb74d;
     font-style: italic;
-    background: linear-gradient(135deg, rgba(42, 125, 215, 0.25) 0%, rgba(255, 152, 0, 0.2) 100%);
-    border-left: 5px solid #ff9800;
-    border-radius: 10px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.1);
-    line-height: 1.8;
+    background: linear-gradient(135deg, rgba(42, 125, 215, 0.3) 0%, rgba(255, 183, 77, 0.25) 100%);
+    border: 3px solid #ffb74d;
+    border-left: 6px solid #ffb74d;
+    border-radius: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 30px rgba(255, 183, 77, 0.4), inset 0 0 15px rgba(255, 183, 77, 0.15);
+    line-height: 1.9;
 }
 
 /* Footer */
